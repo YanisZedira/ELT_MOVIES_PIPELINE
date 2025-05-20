@@ -88,4 +88,4 @@ def main(request):
     os.system(f"gsutil cp /tmp/movie_genres.csv {gcs_movie_genres}")
     client.load_table_from_uri(gcs_movie_genres, table_relation, job_config=job_config).result()
 
-    return "✅ Pipeline exécuté avec succès"
+    return "Pipeline exécuté avec succès"
